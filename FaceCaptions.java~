@@ -1,0 +1,84 @@
+/**
+ * Auto Generated Java Class.
+ */
+import java.awt.*;
+public class FaceCaptions {
+  
+  
+  public static void main(String[] args) { 
+    String filename;
+    
+    if (args.length > 0) {
+       // got a filename passed into program as a runtime parameter
+       filename = args[0];      
+       System.out.println("Filename passed in: " + filename);
+       
+    } else {
+       // ask user for a picture
+       filename = FileChooser.pickAFile();
+       System.out.println("User picked file: " + filename);
+    }
+    
+  // use the filename to create the picture object
+    Picture pic = new Picture(filename);
+    Turtle tom = new Turtle(pic);
+    tom.setPenColor(Color.red);
+    tom.setPenWidth(6);
+    tom.penUp();
+    tom.moveTo(197, 311);
+    tom.penDown();
+    tom.moveTo(358, 311);
+    tom.moveTo(358, 498);
+    tom.moveTo(197, 498);
+    tom.moveTo(197, 311);
+   
+    
+    tom.drawBowtie(190, 568, Color.red);
+    //tom.penDown();
+    tom.drawMustache(240, 495, Color.black);
+    drawPhrase1(tom, 0, 100);
+    drawPhrase2(tom, 0, 200);
+    
+  //  pic.explore();
+     pic.show();
+  }
+  public static void drawPhrase1(Turtle t, int xPos, int yPos){
+    t.setHeading(0);
+    t.moveTo(xPos, yPos);
+    TurtleAlphabet.drawCBoldSize(t, Color.blue, true, 1);
+    TurtleAlphabet.drawOBoldSize(t, Color.blue, true, 1);
+    TurtleAlphabet.drawMBoldSize(t, Color.blue, true, 1);
+    TurtleAlphabet.drawPBoldSize(t, Color.blue, true, 1);
+    TurtleAlphabet.drawUBoldSize(t, Color.blue, true, 1);
+    TurtleAlphabet.drawTBoldSize(t, Color.blue, true, 1);
+    TurtleAlphabet.drawEBoldSize(t, Color.blue, true, 1);
+    TurtleAlphabet.drawRBoldSize(t, Color.blue, true, 1);
+    
+    
+    t.setHeading(90);
+    t.penUp();
+  }
+  
+  public static void drawPhrase2(Turtle t, int xPos, int yPos){
+    t.setHeading(0);
+    t.moveTo(xPos, yPos);
+    TurtleAlphabet.drawPBoldSize(t, Color.blue, true, 1);
+    TurtleAlphabet.drawRBoldSize(t, Color.blue, true, 1);
+    TurtleAlphabet.drawOBoldSize(t, Color.blue, true, 1);
+    TurtleAlphabet.drawGBoldSize(t, Color.blue, true, 1);
+    TurtleAlphabet.drawRBoldSize(t, Color.blue, true, 1);
+    TurtleAlphabet.drawABoldSize(t, Color.blue, true, 1);
+    TurtleAlphabet.drawMBoldSize(t, Color.blue, true, 1);
+    TurtleAlphabet.drawMBoldSize(t, Color.blue, true, 1);
+    TurtleAlphabet.drawEBoldSize(t, Color.blue, true, 1);
+    TurtleAlphabet.drawRBoldSize(t, Color.blue, true, 1);
+    
+    
+    t.setHeading(90);
+    t.penUp();
+    
+  }
+  
+
+
+}

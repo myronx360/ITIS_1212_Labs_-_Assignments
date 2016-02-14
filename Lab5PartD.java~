@@ -1,0 +1,24 @@
+/* Practicing basic algorithms.  Part of Lab 5 */
+/* Use modulus operator                        */
+import java.util.Scanner;
+
+public class Lab5PartD
+{
+  public static void main(String [] args) 
+  {
+      // Prompt user to enter number of days of vacation taken as an integer
+      System.out.println("");
+      
+      // Accept data from user
+      Scanner keyboard = new Scanner(System.in);
+      // Convert string entered to ...
+      int daysVacation = keyboard.nextInt();
+
+      // Perform necessary calculations.  Replace =0 below with the proper calculation.
+      int weeks=0;
+      int days=0;
+      
+      // Display results
+      System.out.println("");
+  }
+}
